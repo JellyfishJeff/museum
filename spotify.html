@@ -1,0 +1,110 @@
+<html>
+​
+<head>
+    <title> Drive the party</title>
+    <link rel="icon" type=" image/svg+xml" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+​
+<body>
+    <br>
+    <br>
+    <div class="container"> 
+        <div class="row">
+            <div class=" col">
+                <h1>DRIVE THE PARTY</h1>
+                <h5 style="color: gray; font-weight:300;">Add a nostalgic song to our shared playlist</h5>
+            </div>
+            <div class="col">
+                    <h4 style="float: right">Powered by Spotify.</h4>
+
+            </div>
+        </div>       
+
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <input type="hidden" id='hidden_token'>
+                    <div class="form-group mt-4 px-0">
+                        <label for="Genre" class="form-label col-sm-2">Genre</label>
+                        <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                            <option>Select a genre</option>                    
+                        </select>
+                    </div>
+                    <div class="form-group px-0">
+                        <label for="Genre" class="form-label col-sm-2">Playlists</label>
+                        <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                            <option>Select a playlist</option>                    
+                        </select>
+                    </div>
+        
+                    <div class="px-0">
+                        <div class="list-group song-list">
+                            
+                        </div>                                             
+                    </div>
+                    <br>  
+                    <div class="form-group px-0">
+                            <button type="submit" id="btn_submit" class="btn col-sm-12">Search</button>
+                        </div>        
+                </form>
+
+            </div>
+            <div class="col">
+                <br>
+                <div class="offset-md-1" id="song-detail"></div>
+                
+                <div class="form-group" style="margin-top: 153px">
+                        <button style="background-color: rgba(0, 0, 0, 0); border: 1px solid lightgrey" type="submit" id="btn_submit" class="btn col-sm-12">Add to Queue</button>
+                    </div>  
+            </div>   
+        </div>
+
+        
+    </form>
+    <br>
+    <br>
+    <h4>In Queue</h4>
+    <hr>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+            <div class="row">
+                <div class="col-3">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Reviews</li>
+                        <li>Learn more</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <form action="">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Subscribe to our Newsletter</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <button type="submit" id="btn_submit" style="border: 1px solid lightgray" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <!-- pop art text -->
+            <hr style="border: 1px solid white">
+            <p style="text-align: center">This website is built solely for educational purposes.</p>
+        </footer>
+    <script type="text/javascript" src="api.js"></script>
+</body>
+</html>
